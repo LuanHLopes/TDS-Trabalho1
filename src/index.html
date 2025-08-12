@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Wicked</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstarp -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <img src="assets/img/logo.png" alt="">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">Sobre o Filme</a></li>
+          <li><a href="#soundtrack">Soundtrack</a></li>
+          <li><a href="#playInfo">Musical</a></li>
+          <li><a href="#cast">Elenco</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#shizTag">Faça sua carteirinha</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="">
+
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-xl-6 col-lg-8">
+            <h2>WICKED</h2>
+            <p class="text-center">A história não contada das bruxas de OZ<span>.</span></p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container-lg">
+        <div class="row gy-4">
+          <!-- Image Column -->
+          <div class="col-lg-6 order-1 order-lg-2 position-relative">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="About Image">
+            <!-- Play Button Overlay -->
+            <button class="play-button" onclick="openVideoPopup()">
+              <i class="bi bi-play-circle"></i>
+            </button>
+          </div>
+
+          <!-- Content Column -->
+          <div class="col-lg-6 order-2 order-lg-1 content">
+            <h3 class="text-center">A história não contada das bruxas de OZ</h3>
+            <p>
+              Wicked (2024) é uma adaptação cinematográfica do icônico musical da Broadway. A história serve como um
+              prelúdio ao clássico
+              O Mágico de Oz, explorando os eventos e relações que moldaram as vidas de Elphaba, a futura Bruxa Má do
+              Oeste, e Glinda, a
+              futura Bruxa Boa do Sul. Com uma narrativa rica em música,
+              emoção e espetáculo
+              visual, Wicked revisita o mundo de Oz sob uma nova perspectiva, desafiando as noções tradicionais de
+              heróis e vilões.
+            </p>
+            <ul>
+              <li><i class="bi bi-quote"></i>
+                <span>
+                  "O mais divertido do ano e o musical live-action mais deslumbrante desde 'Chicago'" <br>
+                  Kyle Smith - The Wall Street Journal
+                </span>
+              </li>
+              <li><i class="bi bi-quote"></i>
+                <span>
+                  "Uma obra-prima musical que supera as expectativas"<br>
+                  Jazz Tangcay - Variety
+                </span>
+              </li>
+              <li><i class="bi bi-quote"></i>
+                <span>
+                  "Uma diversão deliciosa do início ao fim"<br>
+                  Antonia Blyth - Deadline Hollywood
+                </span>
+              </li>
+            </ul>
+            <p>
+              Wicked recebeu 10 indicações ao Oscar 2025. Dentre elas, algumas das principais categorias da cerimônia,
+              como Melhor Atriz (Cynthia Erivo), Melhor Atriz Coadjuvante (Ariana Grande) e Melhor Filme.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Popup -->
+      <div id="video-popup" class="video-popup">
+        <div class="video-container">
+          <button class="close-popup" onclick="closeVideoPopup()">&times;</button>
+          <video id="video-player" controls>
+            <!-- Link modificado para permitir reprodução direta -->
+            <source src=" https://dl.dropboxusercontent.com/scl/fi/xmknwzh4n6alsxd8hbs9e/wicked.mp4?rlkey=s39jipu4isb7udwzopvz5hwte&st=25up6cn0&dl=0" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section id="soundtrack" class="service-details section">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-4">
+            <div class="service-box">
+              <h4>SELECIONE A MUSICA PARA OUVIR</h4>
+              <div class="services-list">
+                <a href="#" class="song-link" data-src="https://dl.dropboxusercontent.com/scl/fi/unl14r8cep6guoy1h37cm/1.-No-One-Mourns-the-Wicked.mp3?rlkey=r7fywarmbb3b44tfi0o1i6e8m&st=djjrnnhm&dl=0"
+                  data-authors="Wicked Movie Cast, Ariana Grande">
+                  <i class="bi bi-play-circle"></i><span>No One Mourns the Wicked</span>
+                </a>
+                <a href="#" class="song-link" data-src="https://dl.dropboxusercontent.com/scl/fi/sr91z2m4snvhl5vsa5jz5/2.-Dear-Old-Shiz.mp3?rlkey=g676fcgpy8rj6zefjsezz3fuv&st=3cuih5ul&dl=0"
+                  data-authors=" Wicked Movie Cast, Shiz University Choir">
+                  <i class="bi bi-play-circle"></i><span>Dear Old Shiz</span>
+                </a>
+                <a href="#" class="song-link" data-src="https://dl.dropboxusercontent.com/scl/fi/9s3vumiempxzwio6lqz3r/3.-The-Wizard-And-I.mp3?rlkey=e4gdwpoxtb6plf8slvffjqunu&st=cws6hxs8&dl=0"
+                  data-authors="Cynthia Erivo, Michelle Yeoh">
+                  <i class="bi bi-play-circle"></i><span>The Wizard And I</span>
+                </a>
+                <a href="#" class="song-link" data-src="https://dl.dropboxusercontent.com/scl/fi/ofa2heww02h8x1mkfy4r6/4.-What-Is-This-Feeling.mp3?rlkey=yjlbozn3t3hhv9r9paoh8ivqg&st=qkizwb0x&dl=0"
+                  data-authors=" Ariana Grande, Cynthia Erivo">
+                  <i class="bi bi-play-circle"></i><span>What Is This Feeling?</span>
+                </a>
+                <a href="#" class="song-link" data-src="https://dl.dropboxusercontent.com/scl/fi/ayvzcd15elahmk4ouhuam/5.-Something-Bad.mp3?rlkey=7a8axfzhyeuj08upl1prb28xe&st=0jfwnsvg&dl=0"
+                  data-authors="Peter Dinklage, Cynthia Erivo">
+                  <i class="bi bi-play-circle"></i><span>Something Bad</span>
+                </a>
+                <a href="#" class="song-link" data-src="https://dl.dropboxusercontent.com/scl/fi/4qpnrs516zn8jzugyctgx/6.-Dancing-Through-Life.mp3?rlkey=c1gc0xj29ujcesrh4lpy04bea&st=xzbexi10&dl=0"
+                  data-authors="Jonathan Bailey, Ariana Grande, Ethan Slater, Marissa Bode, Cynthia Erivo">
+                  <i class="bi bi-play-circle"></i><span>Dancing Through Life</span>
+                </a>
+                <a href="#" class="song-link" data-src="https://dl.dropboxusercontent.com/scl/fi/d7gw4j0egx2cjba7q30tr/7.-Popular.mp3?rlkey=ouqorkjmlkckg87pysmzo9vb5&st=0zj4w0nb&dl=0"
+                  data-authors="Ariana Grande, Cynthia Erivo">
+                  <i class="bi bi-play-circle"></i><span>Popular</span>
+                </a>
+                <a href="#" class="song-link" data-src="https://dl.dropboxusercontent.com/scl/fi/i63uxazkmldu7e7y2ocyy/8.-I-m-Not-That-Girl.mp3?rlkey=poa2y42qklg4xt5xjdumckovb&st=7l8lwylz&dl=0"
+                  data-authors="Cynthia Erivo">
+                  <i class="bi bi-play-circle"></i><span>I’m Not That Girl</span>
+                </a>
+                <a href="#" class="song-link" data-src="https://dl.dropboxusercontent.com/scl/fi/6hp6bpz3ygn3lsw50dd3k/9.-One-Short-Day.mp3?rlkey=vqagb86rfto1ncjoodow2feln&st=qxa8qd80&dl=0"
+                  data-authors="Cynthia Erivo, Ariana Grande, Kristin Chenoweth, Idina Menzel">
+                  <i class="bi bi-play-circle"></i><span>One Short Day</span>
+                </a>
+                <a href="#" class="song-link" data-src="https://dl.dropboxusercontent.com/scl/fi/8yb3n4ap73ndh6nxka2ak/10.-A-Sentimental-Man.mp3?rlkey=uhiqcjfyffl0rfn7q6n2sdmxq&st=3gjkm9us&dl=0"
+                  data-authors="Jeff Goldblum">
+                  <i class="bi bi-play-circle"></i><span>A Sentimental Man</span>
+                </a>
+                <a href="#" class="song-link" data-src="https://dl.dropboxusercontent.com/scl/fi/0eax3uxxpo4s4iuydkmj5/11.-Defying-Gravity.mp3?rlkey=b9ieljm5brvwiyrmvjbifo696&st=k5vfzrtj&dl=0"
+                  data-authors="Cynthia Erivo, Ariana Grande">
+                  <i class="bi bi-play-circle"></i><span>Defying Gravity</span>
+                </a>
+                <a href="#" class="song-link" data-src="https://dl.dropboxusercontent.com/scl/fi/xy4csgtpa44t0h45087m5/12.-Ozdust-Duet-Bonus-Track.mp3?rlkey=d8shhmaoogf745mzqq6y99i5n&st=3puxh0d7&dl=0"
+                  data-authors="The Wicked Orchestra">
+                  <i class="bi bi-play-circle"></i><span>Ozdust Duet - Bonus Track</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8 ps-lg-5">
+            <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
+            <h5 class="text-center strong"><strong>Wicked Soundtrack (2024)</strong></h5>
+            <h6>
+              A trilha sonora de "Wicked" (2024) é uma adaptação das músicas do musical original da Broadway, compostas
+              por Stephen Schwartz, vencedor do GRAMMY® e do Oscar®. O álbum, lançado em 22 de novembro de 2024,
+              apresenta
+              13 faixas interpretadas principalmente por Cynthia Erivo, no papel de Elphaba, e Ariana Grande, como
+              Glinda.
+            </h6>
+
+            <div id="music-player" style="display: none; margin-top: 20px;">
+              <div class="text-center">Tocando Agora: <span id="current-song-title"
+                  style="font-weight: bold; margin-bottom: 10px;"></span></div>
+              <div class="text-center"><span id="current-song-authors"></span></div>
+              <br>
+              <audio id="audio-player" controls style="width: 100%;">Seu navegador não suporta elementos de
+                áudio.</audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="playInfo" class="portfolio-details section">
+      <div class="container">
+        <div class="row d-flex justify-content-center text-center">
+          <div class="col-lg-8">
+            <h1>Mais Sobre Wicked</h1>
+            <p class="mb-0">
+              Wicked: A História Não Contada das Bruxas de Oz é um musical composto por Stephen Schwartz com libreto
+              de Winnie Holzman. A obra é baseada no
+              romance de 1995 de Gregory Maguire, Wicked: The Life and Times of the Wicked Witch of the West, por sua
+              vez baseado no livro de L. Frank Baum, The Wonderful Wizard of Oz e sua adaptação cinematográfica de
+              1939, O Mágico de Oz.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="container">
+        <div class="row d-flex justify-content-center text-center">
+          <div class="col-lg-8">
+            <div class="accordion" id="wickedAccordion">
+              <!-- Broadway Accordion Item -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingBroadway">
+                  <button class="accordion-button wicked-green" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseBroadway" aria-expanded="true" aria-controls="collapseBroadway">
+                    Wicked na Broadway
+                  </button>
+                </h2>
+                <div id="collapseBroadway" class="accordion-collapse collapse show" aria-labelledby="headingBroadway"
+                  data-bs-parent="#wickedAccordion">
+                  <div class="accordion-body">
+                    <p>
+                      Wicked estreou em 30 de outubro de 2003 no Gershwin Theatre, em Nova York. Com músicas e letras
+                      de Stephen Schwartz e libreto de Winnie Holzman, o musical apresenta a história de Elphaba e
+                      Glinda, explorando temas como amizade, preconceito e moralidade.
+                    </p>
+                    <p>
+                      Recebeu prêmios como 3 Tony Awards e 6 Drama Desk Awards e tornou-se um dos musicais mais
+                      lucrativos da história, ultrapassando US$ 1 bilhão em bilheteria. Suas canções icônicas incluem
+                      <em>Defying Gravity</em>, <em>Popular</em> e <em>For Good</em>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Brazil Accordion Item -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingBrazil">
+                  <button class="accordion-button collapsed wicked-pink" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseBrazil" aria-expanded="false" aria-controls="collapseBrazil">
+                    Wicked no Brasil
+                  </button>
+                </h2>
+                <div id="collapseBrazil" class="accordion-collapse collapse" aria-labelledby="headingBrazil"
+                  data-bs-parent="#wickedAccordion">
+                  <div class="accordion-body">
+                    <p>
+                      A primeira produção brasileira de Wicked estreou em 2016 no Teatro Renault, em São Paulo. A
+                      montagem nacional trouxe uma tradução cuidadosa para o português, preservando a essência das
+                      músicas e do roteiro original.
+                    </p>
+                    <p>
+                      O elenco brasileiro foi amplamente elogiado, destacando nomes como Myra Ruiz como Elphaba e Fabi
+                      Bang como Glinda. A superprodução impressionou o público com seus cenários grandiosos, figurinos
+                      detalhados e efeitos especiais deslumbrantes, consolidando o sucesso do musical no Brasil.
+                    </p>
+                    <br>
+                    <h4><strong>Temporadas no Brasil</strong></h4>
+                    <br>
+                    <div class="table-responsive">
+                      <table class="table wicked-table">
+                        <thead>
+                          <tr class="wicked-header">
+                            <th>Ano</th>
+                            <th>Cidade</th>
+                            <th>Teatro</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="wicked-row">
+                            <td>2016</td>
+                            <td>São Paulo</td>
+                            <td>Teatro Renault</td>
+                          </tr>
+                          <tr class="wicked-row">
+                            <td>2023</td>
+                            <td>São Paulo</td>
+                            <td>Teatro Santander</td>
+                          </tr>
+                          <tr class="wicked-row">
+                            <td>2025</td>
+                            <td>São Paulo</td>
+                            <td>Teatro Renault</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="container">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-6">
+            <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+              <!-- Indicators -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+
+              <!-- Slides -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/img/carousel/img-1.jpg" class="d-block w-100" alt="App Design">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/carousel/img-2.jpg" class="d-block w-100" alt="Product Design">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/carousel/img-3.jpg" class="d-block w-100" alt="Branding">
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Curiosidades</h3>
+              <ol type="I">
+                <li><strong>Transformação da Elphaba:</strong>: O processo de maquiagem para Elphaba é demorado, levando
+                  em média duas horas para aplicar a tinta verde em seu corpo, algo que se tornou icônico para o
+                  personagem.</li>
+                <li><strong>Defying Gravity</strong>: A famosa canção "Defying Gravity", cantada por Elphaba, é um dos
+                  números mais emblemáticos do musical. Ela é considerada uma das melhores músicas de todos os tempos da
+                  Broadway.
+                </li>
+                <li><strong>Repercussão na Mídia</strong>: Wicked foi destaque em diversos programas de TV e na mídia
+                  brasileira, e conquistou uma base de fãs muito fiel, com inúmeros grupos de fãs dedicados.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="page-title">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Wicked - Gregory Maguire</h1>
+              <p class="mb-0">
+                Quando se fala em contos de fadas, é comum pensar em histórias repletas de fantasia, princesas
+                encantadas e finais felizes. No entanto, Gregory Maguire nos apresenta a um mundo completamente
+                diferente, onde a magia é obscura, os personagens são complexos e os finais são ambíguos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="book" class="features section">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="features-image col-lg-6"><img src="assets/img/features-bg.jpg" alt=""></div>
+          <div class="col-lg-6">
+            <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0">
+              <!-- Ícone alterado para representar o livro -->
+              <i class="bi bi-book flex-shrink-0"></i>
+              <div>
+                <h4>Livro que deu origem ao musical</h4>
+                <p>Lançado em 1995, o romance foi enorme sucesso de crítica e de público e deu origem a um dos musicais
+                  da Broadway mais populares de todos os tempos.</p>
+              </div>
+            </div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5 ps-0 ps-lg-3">
+              <!-- Ícone alterado para representar vendas ou sucesso -->
+              <i class="bi bi-bar-chart flex-shrink-0"></i>
+              <div>
+                <h4>Sucesso de Vendas</h4>
+                <p>Desde sua publicação, o livro se mantém um sucesso de vendas, tendo se tornado um verdadeiro fenômeno
+                  global.</p>
+              </div>
+            </div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5 ps-0 ps-lg-3">
+              <!-- Ícone alterado para representar o autor -->
+              <i class="bi bi-person flex-shrink-0"></i>
+              <div>
+                <h4>O Autor</h4>
+                <p>Gregory Maguire é um aclamado autor norte-americano por romances que revisitam contos de fadas
+                  clássicos, oferecendo perspectivas
+                  alternativas e análises psicológicas aos personagens.</p>
+              </div>
+            </div><!-- End Features Item-->
+
+            <!-- Botão para abrir o popup com o PDF -->
+            <div class="text-center mt-5">
+              <button class="btn-book" onclick="openPdfPopup()">Abrir Livro</button>
+            </div>
+
+            <!-- Popup com o PDF -->
+            <div id="popupBook" class="popup-book" style="display:none;">
+              <div class="popup-book-overlay" onclick="closePdfPopup()"></div>
+              <div class="popup-book-content">
+                <span class="popup-book-close" onclick="closePdfPopup()">&times;</span>
+                <iframe src="assets/book/Wicked - Gregory Maguire.pdf" width="100%" height="100%"></iframe>
+              </div>
+            </div>
+          </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Team Section -->
+    <section id="cast" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Elenco</h2>
+        <p>Conheça as atrizes de Elphaba e Glinda</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <!-- Card: Cynthia Erivo -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <div class="member-img">
+                <img src="assets/img/cast/cynthia.jpg" class="card-img-top img-fluid" alt="Cynthia Erivo">
+                <div class="social">
+                  <a href="https://www.instagram.com/cynthiaerivo/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Cynthia Erivo</h5>
+                <p class="card-text">Elphaba Wicked (2024)</p>
+              </div>
+            </div>
+          </div><!-- End Card -->
+
+          <!-- Card: Ariana Grande -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <div class="member-img">
+                <img src="assets/img/cast/ariana.jpg" class="card-img-top img-fluid" alt="Ariana Grande">
+                <div class="social">
+                  <a href="https://www.instagram.com/arianagrande/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Ariana Grande</h5>
+                <p class="card-text">Glinda Wicked (2024)</p>
+              </div>
+            </div>
+          </div><!-- End Card -->
+
+          <!-- Card: Idina Menzel -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <div class="member-img">
+                <img src="assets/img/cast/indina.jpg" class="card-img-top img-fluid" alt="Idina Menzel">
+                <div class="social">
+                  <a href="https://www.instagram.com/idinamenzel/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Idina Menzel</h5>
+                <p class="card-text">Elphaba Original Broadway 2003</p>
+              </div>
+            </div>
+          </div><!-- End Card -->
+
+          <!-- Card: Kristin Chenoweth -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <div class="member-img">
+                <img src="assets/img/cast/kristen.jpg" class="card-img-top img-fluid" alt="Kristin Chenoweth">
+                <div class="social">
+                  <a href="https://www.instagram.com/kchenoweth/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Kristin Chenoweth</h5>
+                <p class="card-text">Glinda Original Broadway 2003</p>
+              </div>
+            </div>
+          </div><!-- End Card -->
+
+          <!-- Card: Myra Ruiz -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <div class="member-img">
+                <img src="assets/img/cast/myra.jpg" class="card-img-top img-fluid" alt="Myra Ruiz">
+                <div class="social">
+                  <a href="https://www.instagram.com/myra_ruiz/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Myra Ruiz</h5>
+                <p class="card-text">Elphaba Wicked Brasil e Dubladora</p>
+              </div>
+            </div>
+          </div><!-- End Card -->
+
+          <!-- Card: Fabi Bang -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <div class="member-img">
+                <img src="assets/img/cast/fabi.jpg" class="card-img-top img-fluid" alt="Fabi Bang">
+                <div class="social">
+                  <a href="https://www.instagram.com/fabibang/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Fabi Bang</h5>
+                <p class="card-text">Glinda Wicked Brasil e Dubladora</p>
+              </div>
+            </div>
+          </div><!-- End Card -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Contact Section -->
+    <section id="shizTag" class="contact section">
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Carteirinha</h2>
+        <p>Faça Sua Carteirinha da Universidade de Shiz</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="form-container"
+            style="border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px; background-color: #fff;">
+            <form id="form">
+              <div class="row mb-3">
+                <div class="col-6">
+                  <label for="nome" class="form-label">Nome:</label>
+                  <input type="text" class="form-control uppercase-input" id="nome" required>
+                </div>
+                <div class="col-6">
+                  <label for="id" class="form-label">ID:</label>
+                  <input type="number" class="form-control uppercase-input" id="id" required>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-6">
+                  <label for="dataAdmissao" class="form-label">Data de Admissão:</label>
+                  <input type="date" class="form-control" id="dataAdmissao" required>
+                </div>
+                <div class="col-6">
+                  <label for="genero" class="form-label">Gênero:</label>
+                  <select class="form-select" id="genero" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="foto" class="form-label">Selecione uma Foto:</label>
+                <input type="file" class="form-control" id="foto" accept="image/*" required>
+                <div class="preview-container">
+                  <img id="preview" src="" alt="Pré-visualização da foto"
+                    style="display:none; width: 100px; margin-top: 10px;">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="frase" class="form-label">Digite uma frase:</label>
+                <textarea class="form-control uppercase-input" id="frase" rows="3" maxlength="255" required></textarea>
+              </div>
+              <div class="row mb-3">
+                <div class="col-6">
+                  <label class="form-label">Escolha sua Fav:</label><br>
+                  <input type="radio" id="elphaba" name="fav" value="Elphaba" checked>
+                  <label for="elphaba">Elphaba</label>
+                  <input type="radio" id="glinda" name="fav" value="Glinda">
+                  <label for="glinda">Glinda</label>
+                </div>
+                <div class="col-6">
+                  <label for="musica" class="form-label">Música Favorita:</label>
+                  <input list="musicas" class="form-control" id="musica" required>
+                  <datalist id="musicas"></datalist>
+                </div>
+              </div>
+              <div align="right">
+                <button type="button" class="btn wicked-btn ali" onclick="gerarCarteirinha()">Gerar Carteirinha</button>
+              </div>
+            </form>
+          </div>
+
+          <div id="carteirinha" class="carteirinha" style="display:none;">
+            <div class="carteirinha-frame">
+              <h3>SHIZ UNIVERSITY</h3>
+              <p class="year text-center">Class of 2024</p>
+              <img id="carteirinhaFoto" src="" alt="Foto na carteirinha">
+              <h4 id="carteirinhaNome"></h4>
+              <p><strong>Gênero:</strong> <span id="carteirinhaGenero"></span></p>
+              <p><strong>Fav:</strong> <span id="carteirinhaFav"></span></p>
+              <p><strong>Música Favorita:</strong> <span id="carteirinhaMusica"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer dark-background-noOpacity">
+    <div class="copyright">
+      <div class="container text-center">
+        <p class="text-center">©2025 <span>Copyright</span> <strong class="px-1 sitename">Luan Lopes <i>&</i> João
+            Teixeira</strong>
+          <span>Todos os Direitos Resenvados</span>
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // Select all song links
+    const songLinks = document.querySelectorAll(".song-link");
+    const audioPlayer = document.getElementById("audio-player");
+    const musicPlayer = document.getElementById("music-player");
+    const currentSongTitle = document.getElementById("current-song-title"); // Song title
+    const currentSongAuthors = document.getElementById("current-song-authors"); // Song authors
+
+    // Add click event listeners to each link
+    songLinks.forEach(link => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault(); // Prevent default anchor behavior
+        const songSrc = link.getAttribute("data-src"); // Get the song URL
+        const songTitle = link.querySelector("span").textContent; // Get the song title
+        const songAuthors = link.getAttribute("data-authors"); // Get the song authors
+
+        audioPlayer.src = songSrc; // Set the audio source
+        currentSongTitle.textContent = songTitle; // Set the current song title
+        currentSongAuthors.textContent = `${songAuthors}`; // Set the song authors
+        musicPlayer.style.display = "block"; // Show the player
+        audioPlayer.play(); // Start playing
+      });
+    });
+  </script>
+
+  <script>
+    // Dados das músicas para preencher o datalist dinamicamente
+    const musicas = [
+      "No One Mourns the Wicked",
+      "Dear Old Shiz",
+      "The Wizard and I",
+      "What Is This Feeling?",
+      "Dancing Through Life",
+      "Popular",
+      "I'm Not That Girl",
+      "Defying Gravity",
+      "Thank Goodness",
+      "The Wicked Witch of the East",
+      "No Good Deed",
+      "March of the Witch Hunters",
+      "For Good",
+      "Finale"
+    ];
+
+    // Preenchendo o datalist dinamicamente
+    const datalist = document.getElementById('musicas');
+    musicas.forEach(musica => {
+      const option = document.createElement('option');
+      option.value = musica;
+      datalist.appendChild(option);
+    });
+
+    // Converter texto dos inputs para maiúsculo
+    document.querySelectorAll('.uppercase-input').forEach(input => {
+      input.addEventListener('input', function () {
+        this.value = this.value.toUpperCase();
+      });
+    });
+
+    // Exibir pré-visualização da imagem no input file
+    document.getElementById('foto').addEventListener('change', function () {
+      const file = this.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          const preview = document.getElementById('preview');
+          preview.src = e.target.result;
+          preview.style.display = 'block';
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+
+    // Função para gerar a carteirinha
+    function gerarCarteirinha() {
+      const carteirinha = {
+        nome: document.getElementById('nome').value,
+        id: document.getElementById('id').value,
+        genero: document.getElementById('genero').value,
+        fav: document.querySelector('input[name="fav"]:checked').value,
+        musica: document.getElementById('musica').value,
+        foto: document.getElementById('foto').files[0]
+      };
+
+      document.getElementById('carteirinhaNome').textContent = carteirinha.nome;
+      document.getElementById('carteirinhaGenero').textContent = carteirinha.genero.charAt(0).toUpperCase() + carteirinha.genero.slice(1);
+      document.getElementById('carteirinhaFav').textContent = carteirinha.fav;
+      document.getElementById('carteirinhaMusica').textContent = carteirinha.musica;
+
+      if (carteirinha.foto) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          document.getElementById('carteirinhaFoto').src = e.target.result;
+        };
+        reader.readAsDataURL(carteirinha.foto);
+      }
+
+      document.getElementById('carteirinha').style.display = 'flex';
+    }
+  </script>
+
+</body>
+
+</html>
